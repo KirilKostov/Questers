@@ -9,18 +9,18 @@
     border: 2px solid #000;
 
   }
-    #logo-holder {
+    .logo {
       display: inline-block;
       float: left;
       overflow: hidden;
     }
-      #logo-holder a {
+      .logo__link {
         display: block;
         border: 2px solid #000;
         border-radius: 5px;
         overflow: hidden;
       }
-        #logo-holder a img {
+        .logo__img {
           display: block;
           width: 60px;
           padding: 8px;
@@ -67,10 +67,10 @@
           text-decoration: none;
           color: #000;
         }
-  #content {
+  #articles {
     margin: 20px;
   }
-    #content section {
+    .article__body {
       max-height: 200px;
       margin-bottom: 20px;
       padding: 5px;
@@ -79,7 +79,7 @@
       overflow: auto;
       box-sizing: border-box;
     }
-    #content section:last-child {
+    #article_c .article__body {
       margin-bottom: 0;
     }
 
@@ -90,13 +90,13 @@
     margin: 0;
     border: none;
   }
-    #logo-holder {
+    .logo {
       display: block;
       float: none;
       margin: 20px 0;
       text-align: center;
     }
-      #logo-holder a {
+      .logo__link {
         display: inline-block;
       }
 
@@ -123,24 +123,24 @@
           border-right: none;
         }
 
-  #content {
+  #articles {
     margin: 40px;
   }
-    #content #section-A,
-    #content #section-B {
+    #article_a .article__body,
+    #article_b .article__body {
       width: 47.25%;
       max-height: 340px;
       margin-bottom: 40px;
     }
-    #content #section-A {
+    #article_a .article__body {
       float: left;
       margin-right: 2.75%;
     }
-    #content #section-B {
+    #article_b .article__body {
       float: right;
       margin-left: 2.75%;
     }
-    #content #section-C {
+    #article_c .article__body {
       max-height: 160px;
     }
 }
@@ -151,14 +151,14 @@
     margin: 5px 5px 0;
     border: 2px solid #000;
   }
-    #logo-holder {
+    .logo {
       float: left;
       margin: 8px;
     }
-      #logo-holder a {
+      .logo__link {
         display: block;
       }
-        #logo-holder a img {
+        .logo__img {
           width: 75px;
         }
 
@@ -180,19 +180,18 @@
             padding: 15px 60px;
           }
 
-    #content #section-A,
-    #content #section-B,
-    #content #section-C {
+    #article_a .article__body,
+    #article_b .article__body,
+    #article_c .article__body {
       float: left;
-      width: 30%;
+      width: 31%;
       max-height: 520px;
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0;
     }
 
-    #content #section-A,
-    #content #section-B {
-      margin-right: 5%;
+    #article_a .article__body,
+    #article_b .article__body {
+      margin-right: 3.5%;
     }
 }
 
