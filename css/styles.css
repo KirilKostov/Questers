@@ -81,6 +81,68 @@
 			margin-bottom: 0;
 		}
 
+/* Tablet View */
+@media only screen and (min-width: 768px) { /* Not using min-device-width, since I'm testing on a desktop PC */
+
+	#header {
+		margin: 0;
+		border: none;
+	}
+		#logo-holder {
+			display: block;
+			float: none;
+			margin: 20px 0;
+			text-align: center;
+		}
+			#logo-holder a {
+				display: inline-block;
+			}
+
+		#main-nav {
+			text-align: center;
+		}
+			#main-nav .menu-trigger {
+				display: none;
+			}
+
+			#main-nav #main-menu {
+				display: block;
+				position: static;
+				margin: 0 40px;
+			}
+				#main-menu li {
+					display: inline-block;
+					width: 33.33%;
+					border-right: 2px solid #000;
+					border-bottom: none;
+					box-sizing: border-box;
+				}
+				#main-menu li:last-child {
+					border-right: none;
+				}
+
+	#content {
+		margin: 40px;
+	}
+		#content #section-A,
+		#content #section-B {
+			width: 47.25%;
+			max-height: 340px;
+			margin-bottom: 40px;
+			box-sizing: border-box;
+		}
+		#content #section-A {
+			float: left;
+			margin-right: 2.75%;
+		}
+		#content #section-B {
+			float: right;
+			margin-left: 2.75%;
+		}
+		#content #section-C {
+			max-height: 160px;
+		}
+}
 
 /* Clear Floats */
 .clear:before,
