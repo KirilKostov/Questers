@@ -70,16 +70,23 @@
   #articles {
     margin: 20px;
   }
-    .article__body {
+    .article {
       max-height: 200px;
       margin-bottom: 20px;
-      padding: 5px;
+      padding: 10px;
       border: 2px solid #000;
-      color: #b5b5b5;
       overflow: auto;
       box-sizing: border-box;
     }
-    #article_c .article__body {
+    .article__title {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    .article__body {
+      margin: 0;
+      color: #b5b5b5;
+    }
+    #article_c {
       margin-bottom: 0;
     }
 
@@ -126,21 +133,21 @@
   #articles {
     margin: 40px;
   }
-    #article_a .article__body,
-    #article_b .article__body {
+    #article_a,
+    #article_b {
       width: 47.25%;
       max-height: 340px;
       margin-bottom: 40px;
     }
-    #article_a .article__body {
+    #article_a {
       float: left;
       margin-right: 2.75%;
     }
-    #article_b .article__body {
+    #article_b {
       float: right;
       margin-left: 2.75%;
     }
-    #article_c .article__body {
+    #article_c {
       max-height: 160px;
     }
 }
@@ -180,17 +187,17 @@
             padding: 15px 60px;
           }
 
-    #article_a .article__body,
-    #article_b .article__body,
-    #article_c .article__body {
+    #article_a,
+    #article_b,
+    #article_c {
       float: left;
       width: 31%;
       max-height: 520px;
       margin: 0;
     }
 
-    #article_a .article__body,
-    #article_b .article__body {
+    #article_a,
+    #article_b {
       margin-right: 3.5%;
     }
 }
